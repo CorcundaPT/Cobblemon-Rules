@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <link rel="stylesheet" href="style/main.css">
+    <style></style>
+    <body>
+        <div class="menu">
+            <ul class="menu_tier1">
+                <li><a href="#SeasonRules">Regras de Season</a></li>
+                <ul class="menu_tier2">
+                    <li><a href="#SeasonType">Variações</a></li>
+                    <li><a href="#SeasonPoints">Pontuação</a></li>
+                    <li><a href="#SeasonRewards">Recompensas</a></li>
+                </ul>
+                <li><a href="#EventRules">Regras de Evento</a></li>
+                <ul class="menu_tier2">
+                    <li><a href="#EventType">Variações</a></li>
+                    <li><a href="#EventPoints">Pontuação</a></li>
+                    <li><a href="#EventRewards">Recompensas</a></li>
+                </ul>
+                <li><a href="#VillagerTrades">Trocas de Villager</a></li>
+                <ul class="menu_tier2">
+                    <li><a href="#VillagerSkull">Victory Exchanger</a></li>
+                    <li><a href="#VillagerFossil">Fossil Seller</a></li>
+                    <li><a href="#VillagerDrugs">Drug Dealer</a></li>
+                    <li><a href="#VillagerFarmer">Mint Farmer</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div>
+            <div class="content">
+                <h1 id="SeasonRules">Regras de Season</h1>
+                <p>As seasons têm uma duração de 2 semanas, cada jogador tem um tipo associado e podem ganhar pontos. No fim das 2 semanas, os melhores jogadores serão recompensados consoante a sua prestação.</p>
+                <h2 id="SeasonType">Variações da Season</h2>
+                <p>O estilo da season é aleatório variando entre Single Battle, Double Battle e Random Monotype, Same Monotype, User Choice Monotype.</p>
+                <table class="variations">
+                    <tr>
+                        <td class="blank"></td>
+                        <td class="table_head">Random</td>
+                        <td class="table_head">Same</td>
+                        <td class="table_head">User Choice</td>
+                    </tr>
+                    <tr>
+                        <td class="table_head">Single</td>
+                        <td id="SingleRNGMono" style="font-style: italic;"></td>
+                        <td id="SingleSameMono" style="font-style: italic;"></td>
+                        <td id="SingleUserMono" style="font-style: italic;"></td>
+                    </tr>
+                    <tr>
+                        <td class="table_head">Double</td>
+                        <td id="DoubleRNGMono" style="font-style: italic;"></td>
+                        <td id="DoubleSameMono" style="font-style: italic;"></td>
+                        <td id="DoubleUserMono" style="font-style: italic;"></td>
+                    </tr>
+                </table>
+                <div class="block">
+                    <div class="sub_block">
+                        <h3>Single Battle</h3>
+                        Os combates são feitos no estilo de 1v1.
+                    </div>
+                    <br>
+                    <div class="sub_block">
+                        <h3>Double Battle</h3>
+                        Os combates são feitos no estilo de 2v2.
+                    </div>
+                    <br>
+                    <div class="sub_block">
+                        <h3>Random Monotype</h3>
+                        Cada jogador terá um typing aleatório associado e todos os pokemons da equipa terão de ter esse typing.
+                    </div>
+                    <br>
+                    <div class="sub_block">
+                        <h3>Same Monotype</h3>
+                        Todos jogador terão o mesmo typing aleatório associado e todos os pokemons da equipa terão de ter esse typing.
+                    </div>
+                    <br>
+                    <div class="sub_block">
+                        <h3>User Choice Monotype</h3>
+                        Cada jogador escolhe o seu typing para ficar associado e todos os pokemons terão de ter esse typing.
+                    </div>
+                </div>
+                <h2 id="SeasonPoints">Pontuação da Season</h2>
+                <p>Durate a Season cada combate oficial, tem de ser escrito na threat de discord dedicada ao Evento, para recompensar o jogador que ganhar combates e prejudicar os jogadores que perderem.</p>
+                <table class="variations">
+                    <tr>
+                        <td class="blank"></td>
+                        <td class="table_head">Win</td>
+                        <td class="table_head">Lost</td>
+                    </tr>
+                    <tr>
+                        <td class="table_head">Casual</td>
+                        <td>+1</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+
+                        <td class="table_head">Desafiante</td>
+                        <td>+6</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr>
+                        <td class="table_head">Gym Leader</td>
+                        <td>+2</td>
+                        <td>-1</td>
+                    </tr>
+                </table>
+                <div class="block">
+                    <div class="sub_block">
+                        <h2>Casual Battle</h2>
+                        Casual Battles podem ser feitas a qualquer momento entre 2 jogadores.
+                    </div>
+                    <br>
+                    <div class="sub_block">
+                        <h2>Gym Battle</h2>
+                        Gym Battles têm de ser feito com 1 jogador Desafiante e 1 jogador Gym Leader. Estes só podem ser feitos num Gym criado pelo próprio Gym Leader e tem de ser criado uma equipa fixa para proteger o Gym. Qualquer jogador pode desafiar o Gym Leader num combate para poder receber mais pontos no fim da Season. Quando registando o combate, o Gym Leader tem que ser descrito, exemplo "Jogador1 1-0 Jogador2 (Gym)" ou "(Gym) Jogador1 1-0 Jogador2"
+                    </div>
+                </div>
+                <h2 id="SeasonRewards">Recompensas da Season</h2>
+                <p>No fim da Season os 3 jogadores com mais pontos irão ser recompensados com diferentes prémios dependendo da sua prestação.</p>
+                <table class="variations">
+                    <tr>
+                        <td class="table_head">1st Place</td>
+                        <td>3x Wither Skelleton Skull</td>
+                        <td>1x Shiny Pokemon</td>
+                    </tr>
+                    <tr>
+                        <td class="table_head">2nd Place</td>
+                        <td colspan="2">1x Wither Skelleton Skull</td>
+                    </tr>
+                    <tr>
+                        <td class="table_head">3rd Place</td>
+                        <td colspan="2">32x Relic Coin Sack</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="content">
+                <h1 id="EventRules">Regras de Evento</h1>
+                <p>O Evento Acontece todos os sábados e terá a duração 1 só dia. Cada jogador terá que usar a equipa atribuida a ele e só pode fazer um unico combate com cada jogador. No fim do evento, os melhores jogadores serão recompensados consoante a sua prestação.</p>
+                <h2 id="EventType">Variações dos Eventos</h2>
+                <p>O estilo dos eventos é aleatório variando entre Single Battle, Double Battle, Triple Battle e Random Team, Same 2 Pokemon, User Choice Team.</p>
+                <table class="variations">
+                    <tr>
+                        <td class="blank"></td>
+                        <td style="font-weight: bold;">Random</td>
+                        <td style="font-weight: bold;">Same</td>
+                        <td style="font-weight: bold;">User Choice</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Single</td>
+                        <td id="SingleRNGTeam" style="font-style: italic;"></td>
+                        <td id="SingleSameTeam" style="font-style: italic;"></td>
+                        <td id="SingleUserTeam" style="font-style: italic;"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Double</td>
+                        <td id="DoubleRNGTeam" style="font-style: italic;"></td>
+                        <td id="DoubleSameTeam" style="font-style: italic;"></td>
+                        <td id="DoubleUserTeam" style="font-style: italic;"></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">Triple</td>
+                        <td id="TripleRNGTeam" style="font-style: italic;"></td>
+                        <td id="TripleSameTeam" style="font-style: italic;"></td>
+                        <td id="TripleUserTeam" style="font-style: italic;"></td>
+                    </tr>
+                </table>
+                <div class="block">
+                    <div class="sub_block">
+                        <h3>Single Battle</h3>
+                        Os combates são feitos no estilo de 1v1.
+                    </div>
+                    <br>
+                    <div class="sub_block">
+                        <h3>Double Battle</h3>
+                        Os combates são feitos no estilo de 2v2.
+                    </div>
+                    <br>
+                    <div class="sub_block">
+                        <h3>Triple Battle</h3>
+                        Os combates são feitos no estilo de 3v3.
+                    </div>
+                    <br>
+                    <div class="sub_block">
+                        <h3>Random Monotype</h3>
+                        Cada jogador terá um typing aleatório associado e todos os pokemons da equipa terão de ter esse typing.
+                    </div>
+                    <br>
+                    <div class="sub_block">
+                        <h3>Same Monotype</h3>
+                        Todos jogador terão o mesmo typing aleatório associado e todos os pokemons da equipa terão de ter esse typing.
+                    </div>
+                    <br>
+                    <div class="sub_block">
+                        <h3>User Choice Monotype</h3>
+                        Cada jogador escolhe o seu typing para ficar associado e todos os pokemons terão de ter esse typing.
+                    </div>
+                </div>
+                <h2 id="EventPoints">Pontuação do Evento</h2>
+                <p>Durate o Evento cada combate oficial, tem de ser escrito na threat de discord dedicada ao Evento, para recompensar o jogador que ganhar combates e prejudicar os jogadores que perderem.</p>
+                <table class="variations">
+                    <tr>
+                        <td class="table_head">Takedown</td>
+                        <td>+1</td>
+                    </tr>
+                    <tr>
+                        <td class="table_head">Win</td>
+                        <td>+3</td>
+                    </tr>
+                </table>
+                <div class="block">
+                    <div class="sub_block">
+                        <h2>Takedown</h2>
+                        Cada pokemon que o jogador derrotar será recompensado com 1 ponto
+                    </div>
+                    <br>
+                    <div class="sub_block">
+                        <h2>Win</h2>
+                        Cada combate ganho, o jogador é recompensado com 3 pontos
+                    </div>
+                </div>
+                <h2 id="EventRewards">Recompensas do Evento</h2>
+                <p>No fim da Season os 3 jogadores com mais pontos irão ser recompensados com diferentes prémios dependendo da sua prestação.</p>
+                <table class="variations">
+                    <tr>
+                        <td class="table_head">1st Place</td>
+                        <td>1x Wither Skelleton Skull</td>
+                    </tr>
+                    <tr>
+                        <td class="table_head">2nd Place</td>
+                        <td>32x Relic Coin Sack</td>
+                    </tr>
+                    <tr>
+                        <td class="table_head">3rd Place</td>
+                        <td>16x Relic Coin Sack</td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="content">
+                <h1 id="VillagerTrades">Trocas de Villager</h1>
+                <br>
+                <h2 id="VillagerSkull">Victory Exchanger</h2>
+                <table class="variations">
+                    <tr>
+                        <td class="table_head">Take</td>
+                        <td class="table_head">Give</td>
+                    </tr>
+                    <tr>
+                        <td class="trade_take">64x Relic Coin Sack</td>
+                        <td class="trade_give">1x Wither Skelleton Skull</td>
+                    </tr>
+                    <tr>
+                        <td class="trade_take">1x Wither Skelleton Skull</td>
+                        <td class="trade_give">64x Relic Coin Sack</td>
+                    </tr>
+                    <tr>
+                        <td class="trade_take">1x Wither Skelleton Skull</td>
+                        <td class="trade_give">1x Exp Candy XL (30k exp)</td>
+                    </tr>
+                    <tr>
+                        <td class="trade_take">1x Wither Skelleton Skull</td>
+                        <td class="trade_give">1x Ability Capsule</td>
+                    </tr>
+                    <tr>
+                        <td class="trade_take">2x Wither Skelleton Skull</td>
+                        <td class="trade_give">1x Netherite Ingot</td>
+                    </tr>
+                    <tr>
+                        <td class="trade_take">3x Wither Skelleton Skull</td>
+                        <td class="trade_give">1x Nether Star</td>
+                    </tr>
+                    <tr>
+                        <td class="trade_take">5x Wither Skelleton Skull</td>
+                        <td class="trade_give">1x Ability Patch</td>
+                    </tr>
+                </table>
+                <br>
+                <h2 id="VillagerFossil">Fossil Seller</h2>
+                <table class="variations">
+                    <tr>
+                        <td class="table_head">Take</td>
+                        <td class="table_head">Give</td>
+                    </tr>
+                    <tr>
+                        <td class="trade_take">16x Relic Coin Pouch</td>
+                        <td class="trade_give">1x Any Fossil</td>
+                    </tr>
+                    <tr>
+                        <td class="trade_take">8x Relic Coin Pouch</td>
+                        <td class="trade_give">1x Any Fossilized Part</td>
+                    </tr>
+                </table>
+                <br>
+                <h2 id="VillagerDrugs">Drug Dealer</h2>
+                <table class="variations">
+                    <tr>
+                        <td class="table_head">Take</td>
+                        <td class="table_head">Give</td>
+                    </tr>
+                    <tr>
+                        <td class="trade_take">1x Relic Coin Pouch</td>
+                        <td class="trade_give">1x Any Drug</td>
+                    </tr>
+                </table>
+                <br>
+                <h2 id="VillagerFarmer">Mint Farmer</h2>
+                <table class="variations">
+                    <tr>
+                        <td class="table_head">Take</td>
+                        <td class="table_head">Give</td>
+                    </tr>
+                    <tr>
+                        <td class="trade_take">1x Relic Coin</td>
+                        <td class="trade_give">2x Any Mint</td>
+                    </tr>
+                    <tr>
+                        <td class="trade_take">1x Relic Coin</td>
+                        <td class="trade_give">4x Any Mint Seed</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script src="js/Variations.js"></script>
+    <script src="js/Villagers.js"></script>
+</html>

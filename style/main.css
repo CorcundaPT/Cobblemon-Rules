@@ -1,0 +1,98 @@
+:root {
+    --bg-color1:rgb(30,30,30);
+    --bg-color2:rgb(220,220,220);
+    --block-color1:rgba(255,255,255,0.03);
+    --hd-color1:rgb(241, 154, 39);
+    --hd-color2:rgb(233, 198, 123);
+    --trade-color1:rgb(226, 186, 183);
+    --trade-color2:rgb(187, 233, 211);
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    background-color: var(--bg-color1);
+    color: var(--bg-color2);
+}
+hr {
+    border: 5px double var(--block-color1);
+}
+h1, h2, h3 {
+    margin: 0px;
+    text-align: center;
+}
+h2, h3 {
+    color: var(--hd-color1);
+}
+
+.menu {
+    position: fixed;
+    width: 200px;
+}
+.menu ul {
+    margin: 0px;
+    padding: 10px 10px;
+    padding-right: 0px;
+    margin: 0px 10px;
+    margin-right: 10px;
+    list-style-type: none;
+}
+.menu_tier1 a {
+    color: var(--hd-color1);
+    text-decoration: none;
+    margin: 10px 0px;
+}
+.menu_tier2 a {
+    color: var(--hd-color2);
+    text-decoration: none;
+}
+
+.content {
+    width: 60%;
+    min-width: 600px;
+    margin: 10px auto;
+
+    background-color: var(--block-color1);
+    box-shadow: 0px 0px 2px 2px var(--block-color1);
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+.block, .sub_block{
+    width: 95%;
+
+    background-color: var(--block-color1);
+    box-shadow: 0px 0px 2px 2px var(--block-color1);
+    border-radius: 10px;
+}
+.block {
+    margin: 15px auto;
+    padding: 10px 10px;
+}
+.sub_block {
+    margin: auto;
+    padding: 5px 10px;
+}
+
+.variations {
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border-width: 10px;
+}
+.variations td:not(.blank) {
+    background-color: var(--block-color1);
+    box-shadow: 0px 0px 2px 2px var(--block-color1);
+    padding: 5px 30px;
+}
+
+.table_head {
+    font-weight: bold;
+    color: var(--hd-color1);
+}
+.trade_take {
+    color: var(--trade-color1);
+}
+.trade_give {
+    color: var(--trade-color2);
+}
