@@ -2,6 +2,8 @@
     --bg-color1:rgb(30,30,30);
     --bg-color2:rgb(220,220,220);
     --block-color1:rgba(255,255,255,0.03);
+    --block-color2:rgba(0,0,0,0.3);
+    --navigator-color1: rgba(255,255,255,0.2);
     --hd-color1:rgb(241, 154, 39);
     --hd-color2:rgb(233, 198, 123);
     --trade-color1:rgb(226, 186, 183);
@@ -10,10 +12,35 @@
 
 body {
     margin: 0px;
-    display: flex;
     background-color: var(--bg-color1);
     color: var(--bg-color2);
 }
+nav{
+    text-align: center;
+    background-color: var(--navigator-color1);
+    padding: 10px;
+}
+nav a {
+    background-color: var(--block-color2);
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: var(--bg-color2);
+    border: 1px var(--bg-color1) solid;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: var(--navigator-color1);
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: var(--bg-color2);
+    border: 1px var(--bg-color2) solid;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 hr {
     border: 5px double var(--block-color1);
 }
@@ -24,10 +51,15 @@ h1, h2, h3 {
 h2, h3 {
     color: var(--hd-color1);
 }
+b {
+    color: var(--hd-color2);
+}
 
+.page{
+    display: flex;
+}
 .menu {
     position: fixed;
-    width: 200px;
 }
 .menu ul {
     margin: 0px;
